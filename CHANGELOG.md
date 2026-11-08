@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- **`research/thermal-fluid-research-workflow` plugin**, vendored from
+  [hanhuark/mechanical-engineering-research-skill](https://github.com/hanhuark/mechanical-engineering-research-skill)
+  (MIT, © Han Hu) at upstream commit `7b6c32d` (v0.4.0). 9 skills for thermal-fluid mechanical-engineering
+  research (correlation validity, CFD credibility review, DOE and data analysis, literature and manuscript
+  writing, proposals, slides, editable schematics, mentor feedback, a reviewer-author revision loop), 18 `/me-*`
+  commands and 4 stdlib audit scripts. Skills and commands are copied as-is apart from four patches listed in the
+  plugin README: this repo's manifest in place of upstream's, docs/tests/examples left out,
+  `disable-model-invocation: true` on the 18 wrapper commands (gate G12), and an embedded `--sample` on the two
+  JSON-emitting scripts (gate G9). Counters: skills 411 → 420; tools 807 → 811; refs 917 → 963; commands
+  169 → 187; plugins 110 → 111.
+
 ## [2.14.9] - 2026-11-05 — a docs site that cannot drift, and CI that tests every harness
 
 No new skills. The docs site now builds every count, list and install line from the tree, so it cannot fall

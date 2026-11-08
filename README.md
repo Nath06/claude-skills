@@ -1,12 +1,12 @@
 # Claude Code Skills & Plugins
 
-**411 production-ready skills for Claude Code and 12 other coding agents, covering engineering, product, marketing, compliance, finance and the C-suite. We test whether each skill loads when you ask in plain words, and [publish the results](VERIFIED.md).**
+**420 production-ready skills for Claude Code and 12 other coding agents, covering engineering, product, marketing, compliance, finance and the C-suite. We test whether each skill loads when you ask in plain words, and [publish the results](VERIFIED.md).**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![Skills](https://img.shields.io/badge/Skills-411-brightgreen?style=for-the-badge)](#skills-overview)
+[![Skills](https://img.shields.io/badge/Skills-420-brightgreen?style=for-the-badge)](#skills-overview)
 [![Agents](https://img.shields.io/badge/Agents-129-blue?style=for-the-badge)](#agents)
 [![Personas](https://img.shields.io/badge/Personas-7-purple?style=for-the-badge)](#personas)
-[![Commands](https://img.shields.io/badge/Commands-169-orange?style=for-the-badge)](#commands)
+[![Commands](https://img.shields.io/badge/Commands-187-orange?style=for-the-badge)](#commands)
 [![Stars](https://img.shields.io/github/stars/alirezarezvani/claude-skills?style=for-the-badge)](https://github.com/alirezarezvani/claude-skills/stargazers)
 [![SkillCheck Validated](https://img.shields.io/badge/SkillCheck-Validated-4c1?style=for-the-badge)](https://getskillcheck.com)
 
@@ -67,10 +67,10 @@ Each of these loaded on every plain-language test prompt. [See all verified skil
 Claude Code skills (also called agent skills or coding agent plugins) are modular instruction packages that give AI coding agents domain expertise they don't have out of the box. Each skill includes:
 
 - **SKILL.md** — structured instructions, workflows, and decision frameworks
-- **Python tools** — 807 CLI scripts (all stdlib-only, zero pip installs)
-- **Reference docs** — 917 templates, checklists, and domain-specific knowledge files
+- **Python tools** — 811 CLI scripts (all stdlib-only, zero pip installs)
+- **Reference docs** — 963 templates, checklists, and domain-specific knowledge files
 
-**One repo, thirteen platforms.** Works natively as Claude Code plugins, Codex agent skills, Gemini CLI skills, Hermes Agent skills, Mistral Vibe skills, and converts to more tools via `scripts/convert.sh`. All 807 Python tools run anywhere Python runs.
+**One repo, thirteen platforms.** Works natively as Claude Code plugins, Codex agent skills, Gemini CLI skills, Hermes Agent skills, Mistral Vibe skills, and converts to more tools via `scripts/convert.sh`. All 811 Python tools run anywhere Python runs.
 
 ### Skills vs Agents vs Personas
 
@@ -222,7 +222,7 @@ Run `./scripts/convert.sh --tool all` to generate tool-specific outputs locally.
 
 ## Skills Overview
 
-**411 production-ready skills across 20 domains:**
+**420 production-ready skills across 20 domains:**
 
 | Domain | Skills | Highlights | Details |
 |--------|--------|------------|---------|
@@ -232,7 +232,7 @@ Run `./scripts/convert.sh --tool all` to generate tool-specific outputs locally.
 | **📣 Marketing** | 50 | 8 pods: Content, SEO + AEO (`aeo` — E-E-A-T audit, citation tracking across 5 LLMs) + local (`local-seo-manager` — GBP/NAP/Map-Pack), CRO, Channels, Growth, Intelligence, Sales + `business-name-fit` (cross-cultural naming) + context foundation + orchestration router | [marketing-skill/](marketing-skill/) |
 | **🚀 Productivity** | 12 | `capture` (brain-dump-to-action), `email` pair (inbox-setup + inbox-triage), `reflect` (journal), `handoff` (Matt Pocock-inspired), `andreessen` (market-first decision mode), `roast` (5-angle idea panel → GO/RESHAPE/KILL), `fable-goal` (ramble → autonomous /goal prompt), `weekly-review` (GTD loop with refusal gate), `deep-work` (time-blocking + shallow-work budget), `meetings` (cost gate + agenda + action items), `swedish-mentor` (CEFR-leveled Swedish learning paths) | [productivity/](productivity/) |
 | **🎨 Marketing (top-level)** | 7 | `landing` — single-file HTML landing-page generator (4 design styles, GSAP patterns, brand palette validator); `linkedin` — organic LinkedIn presence with User Agreement §8.2 refusals in code (orchestrator + profile, strategy, content, engagement, analytics) | [marketing/](marketing/) |
-| **🔬 Research (academic)** | 10 | `research` orchestrator (hybrid router + fallback) + 8 specialists: `pulse`, `litreview`, `grants` (NIH), `dossier`, `patent`, `syllabus`, `notebooklm`, `meta-research` (rigor-first meta-research), `deepread` (evidence-first reading of supplied documents) | [research/](research/) |
+| **🔬 Research (academic)** | 19 | `research` orchestrator (hybrid router + fallback) + 8 specialists: `pulse`, `litreview`, `grants` (NIH), `dossier`, `patent`, `syllabus`, `notebooklm`, `meta-research` (rigor-first meta-research), `deepread` (evidence-first reading of supplied documents), plus the 9-skill `thermal-fluid-research-workflow` plugin (thermal-fluid analysis, CFD review, proposals, manuscripts, schematics; vendored from hanhuark/mechanical-engineering-research-skill) | [research/](research/) |
 | **🧪 Research Operations** ✨v2.9.0 | 6 | Enterprise/cross-functional research: orchestrator + `clinical-research` (study design), `research-finance` (R&D program finance), `market-research` (sizing/survey/segmentation), `product-research` (user research), `interview-mapper` (transcript coding with quote verification) — each with onboarding + customization + opt-in autoresearch bridge | [research-ops/](research-ops/) |
 | **📋 Project Management** | 9 | Senior PM, scrum master, Jira, Confluence, Atlassian admin, templates + bundled Atlassian Remote MCP | [project-management/](project-management/) |
 | **🏥 Regulatory & QM** | 23 | ISO 13505, MDR 2017/745, FDA, ISO 27001, GDPR, SOC 2, CAPA, risk management, access reviews (access-lifecycle), CMMC 2.0 Level 2 (cmmc-readiness), agent-decision-receipts (PQ-signed action receipts) | [ra-qm-team/](ra-qm-team/) |
@@ -381,7 +381,7 @@ for MDR Annex II compliance gaps.
 
 ## Python Analysis Tools
 
-807 Python tools ship with the skills (all stdlib-only). A few examples:
+811 Python tools ship with the skills (all stdlib-only). A few examples:
 
 ```bash
 # SaaS health check
@@ -429,7 +429,7 @@ Yes. Skills work natively with 13 tools: Claude Code, OpenAI Codex, Gemini CLI, 
 No. We follow semantic versioning and maintain backward compatibility within patch releases. Existing script arguments, plugin source paths, and SKILL.md structures are never changed in patch versions. See the [CHANGELOG](CHANGELOG.md) for details on each release.
 
 **Are the Python tools dependency-free?**
-Yes. All 807 Python tools use the standard library only — zero pip installs required. Every skill's CLI entry point is verified to run with `--help` (most skills ship one script per tool; a few, like the vendored `engineering/skillopt-sleep` engine, ship a multi-module package behind a single `python -m` entry point). A few tools — `engineering/book-to-skill`'s document extractors — can *optionally* use third-party parsers for higher-fidelity output, but every format falls back to a standard-library parser and nothing is installed implicitly.
+Yes. All 811 Python tools use the standard library only — zero pip installs required. Every skill's CLI entry point is verified to run with `--help` (most skills ship one script per tool; a few, like the vendored `engineering/skillopt-sleep` engine, ship a multi-module package behind a single `python -m` entry point). A few tools — `engineering/book-to-skill`'s document extractors — can *optionally* use third-party parsers for higher-fidelity output, but every format falls back to a standard-library parser and nothing is installed implicitly.
 
 **How do I create my own Claude Code skill?**
 Each skill is a folder with a `SKILL.md` (frontmatter + instructions), optional `scripts/`, `references/`, and `assets/`. See the [Skills & Agents Factory](https://github.com/alirezarezvani/claude-code-skills-agents-factory) for a step-by-step guide.

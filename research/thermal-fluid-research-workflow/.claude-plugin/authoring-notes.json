@@ -1,0 +1,11 @@
+{
+  "attribution": {
+    "upstream": "https://github.com/hanhuark/mechanical-engineering-research-skill",
+    "upstream_commit": "7b6c32d",
+    "upstream_version": "0.4.0",
+    "upstream_path": "skills/ (9 skills), commands/ (18 commands), assets/icon.svg, assets/workflow.mmd, LICENSE",
+    "upstream_author": "Han Hu (https://github.com/hanhuark)",
+    "upstream_license": "MIT",
+    "derivation_note": "Vendored verbatim from upstream main at 7b6c32d, following the loop-library pattern. Not vendored: the upstream .claude-plugin/ and .codex-plugin/ manifests (replaced by this repo's plugin.json; Codex installs come from this repo's .codex/ mirror), the repo-level README translations, docs, tests, examples and scripts/validate_repo.py. Any change made here is listed in README.md's 'Deviations from upstream' section, which is authoritative. Re-vendor by re-copying skills/, commands/ and the two assets from a fresh clone and re-applying that list."
+  }
+}

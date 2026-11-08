@@ -3,7 +3,7 @@
   "name": "claude-code-skills",
   "description": "Production-ready skill packages for AI agents - Marketing, Engineering, Product, C-Level, PM, and RA/QM",
   "repository": "https://github.com/alirezarezvani/claude-skills",
-  "total_skills": 410,
+  "total_skills": 419,
   "skills": [
     {
       "name": "agent-launcher-orchestrator",
@@ -2394,6 +2394,12 @@
       "description": "Use when starting a literature review or a literature-based project. Plans the search (PICO, SPIDER) with framework_recommender.py, searches PubMed and OpenAlex with free_search.py and writes a .docx orientation guide. Single-paper lookups: query directly."
     },
     {
+      "name": "mechanical-engineering-research",
+      "source": "../../research/thermal-fluid-research-workflow/skills/mechanical-engineering-research",
+      "category": "research",
+      "description": "Apply source-aware mechanical-engineering judgment to research, analysis, coding, writing, teaching, research identity, and release work. Use for thermal-fluid systems, heat transfer, fluid mechanics, thermodynamics, HVAC, energy systems, turbomachinery, piping, multiphase flow, experiments, correlations, CFD, reduced-order models, AI/ML, uncertainty, engineering datasets, literature reviews, citations, manuscripts, reviewer revisions, Overleaf packages, figures, proposals, research software, reproducibility, public releases, engineering teaching materials, or a research-project logo and visual identity."
+    },
+    {
       "name": "meta-research",
       "source": "../../research/meta-research/skills/meta-research",
       "category": "research",
@@ -2424,10 +2430,58 @@
       "description": "Use for any research request that doesn't clearly match a research specialist ('research X', 'look into Y'). Routes with classifier.py to pulse, grants, litreview, syllabus, patent, dossier or deepread, or runs its own cited search."
     },
     {
+      "name": "research-data-analysis",
+      "source": "../../research/thermal-fluid-research-workflow/skills/research-data-analysis",
+      "category": "research",
+      "description": "Design and analyze engineering experiments or simulations using baseline cases, hypothesis-driven DOE, traceable data processing, defensible plots, uncertainty, and validation. Use for CFD, laboratory data, ML workflows, parameter studies, or research code."
+    },
+    {
+      "name": "research-mentor-review",
+      "source": "../../research/thermal-fluid-research-workflow/skills/research-mentor-review",
+      "category": "research",
+      "description": "Provide constructive, evidence-based research mentoring feedback on student manuscripts, proposals, analyses, code, figures, and presentations. Use for advisor-style review that teaches the next improvement without impersonating an advisor or making unsupported scientific judgments."
+    },
+    {
+      "name": "research-proposal-development",
+      "source": "../../research/thermal-fluid-research-workflow/skills/research-proposal-development",
+      "category": "research",
+      "description": "Develop research proposals with solicitation alignment, reviewer-focused logic, evidence-bounded preliminary results, milestones, risks, and compelling figures. Use for federal, foundation, equipment, partnership, or internal research proposals."
+    },
+    {
+      "name": "research-schematic-design",
+      "source": "../../research/thermal-fluid-research-workflow/skills/research-schematic-design",
+      "category": "research",
+      "description": "Create publication-quality, editable scientific and engineering schematics with explicit physical meaning, exact labels, visual hierarchy, and provenance. Use for experimental facilities, thermal-fluid mechanisms, workflows, graphical abstracts, system architectures, or research diagrams."
+    },
+    {
+      "name": "research-slide-design",
+      "source": "../../research/thermal-fluid-research-workflow/skills/research-slide-design",
+      "category": "research",
+      "description": "Design clean, graphics-first technical presentations and posters with logical slide progression, visual hierarchy, purposeful motion, and complementary speaker notes. Use for research talks, conference slides, seminars, defenses, posters, or figure-focused presentations."
+    },
+    {
+      "name": "research-writing-literature",
+      "source": "../../research/thermal-fluid-research-workflow/skills/research-writing-literature",
+      "category": "research",
+      "description": "Write and revise rigorous research narratives, literature reviews, manuscript sections, citations, and figure discussions. Use for technical introductions, methods, results, discussions, review articles, abstracts, or related-work sections."
+    },
+    {
+      "name": "reviewer-author-loop",
+      "source": "../../research/thermal-fluid-research-workflow/skills/reviewer-author-loop",
+      "category": "research",
+      "description": "Iterative manuscript improvement workflow where a reviewer agent critiques, an author agent revises, a verifier checks the revision, and the loop repeats until acceptance or a human-pause condition is reached. Use for virtual peer review, reviewer-author revision loops, rebuttal preparation, resubmission polishing, journal paper improvement, response-to-reviewers drafting, and deciding when additional data, experiments, theory, modeling, or author judgment is required before further revision."
+    },
+    {
       "name": "syllabus",
       "source": "../../research/syllabus/skills/syllabus",
       "category": "research",
       "description": "Use when the user shares a course syllabus or outline and wants supplementary readings. Groups topics with topic_grouper.py, finds recent peer-reviewed papers and writes a .docx with summaries and discussion questions."
+    },
+    {
+      "name": "thermal-fluid-analysis",
+      "source": "../../research/thermal-fluid-research-workflow/skills/thermal-fluid-analysis",
+      "category": "research",
+      "description": "Analyze thermal-fluid engineering systems, experiments, CFD, and correlations with explicit assumptions, validity limits, uncertainty, and mechanism-based interpretation. Use for heat transfer, fluid mechanics, phase change, HVAC, energy systems, turbomachinery, piping, or thermal management."
     },
     {
       "name": "clinical-research",
@@ -2543,7 +2597,7 @@
       "description": "Regulatory affairs and quality management skills"
     },
     "research": {
-      "count": 10,
+      "count": 19,
       "source": "../../research",
       "description": "Research orchestrator + 6 specialists (pulse, litreview, grants, dossier, patent, syllabus, notebooklm)"
     },
