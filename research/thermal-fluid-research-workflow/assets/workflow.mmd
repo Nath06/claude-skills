@@ -1,0 +1,43 @@
+%%{init: {"theme": "base", "themeVariables": {"fontFamily": "Inter, Segoe UI, Arial, sans-serif", "primaryColor": "#ecfeff", "primaryTextColor": "#0f172a", "primaryBorderColor": "#0f766e", "lineColor": "#475569", "secondaryColor": "#fff7ed", "tertiaryColor": "#f8fafc", "clusterBkg": "#ffffff", "clusterBorder": "#cbd5e1", "edgeLabelBackground": "#ffffff"}}}%%
+flowchart TB
+    A["Research Request"]:::input
+    B["Plugin Router"]:::core
+
+    C["Academic Scaffold"]:::scaffold
+    D["ME Judgment Layer"]:::core
+
+    A --> B
+    C -. "process" .-> B
+    B --> D
+
+    D --> E{"Mode"}:::gate
+
+    E --> F1["Literature Map"]:::lane
+    E --> F2["Analysis + DOE"]:::lane
+    E --> F3["CFD + Tests"]:::lane
+    E --> F4["Writing + Proposals"]:::lane
+    E --> F5["Code + AI/ML"]:::lane
+    E --> F6["Data + Release"]:::lane
+    E --> F7["Teaching + IP"]:::lane
+
+    F1 --> G
+    F2 --> G
+    F3 --> G
+    F4 --> G
+    F5 --> G
+    F6 --> G
+    F7 --> G
+
+    G["Rigor Gate"]:::gate
+    H["Decision Output"]:::output
+    I["Reusable Artifact"]:::artifact
+
+    G --> H --> I
+
+    classDef input fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#0f172a;
+    classDef core fill:#ccfbf1,stroke:#0f766e,stroke-width:3px,color:#0f172a;
+    classDef scaffold fill:#f8fafc,stroke:#64748b,stroke-width:2px,color:#0f172a;
+    classDef lane fill:#fff7ed,stroke:#f97316,stroke-width:2px,color:#0f172a;
+    classDef gate fill:#fef3c7,stroke:#d97706,stroke-width:3px,color:#0f172a;
+    classDef output fill:#ecfdf5,stroke:#16a34a,stroke-width:3px,color:#0f172a;
+    classDef artifact fill:#f5f3ff,stroke:#7c3aed,stroke-width:2px,color:#0f172a;

@@ -1,0 +1,13 @@
+{
+  "name": "thermal-fluid-research-workflow",
+  "description": "Thermal-fluid mechanical-engineering research skills: correlation validity, CFD credibility review, experiment and DOE planning, literature and manuscript writing, proposals, slides, editable schematics, mentor feedback, and a reviewer-author revision loop. Vendored from hanhuark/mechanical-engineering-research-skill (MIT, Han Hu).",
+  "version": "2.14.9",
+  "author": {
+    "name": "Alireza Rezvani",
+    "url": "https://alirezarezvani.com"
+  },
+  "homepage": "https://github.com/alirezarezvani/claude-skills/tree/main/research/thermal-fluid-research-workflow",
+  "repository": "https://github.com/alirezarezvani/claude-skills",
+  "license": "MIT",
+  "skills": "./skills"
+}
